@@ -3,7 +3,7 @@ monthfirst = true -- Wheter the 1st of Feb should be 1/2/13(monthfirst = false) 
 
 
 function playerspeak(name,msg)
-	f = io.open(chatlog, "a")
+	local f = io.open(chatlog, "a")
 	if monthfirst then
 		f:write(os.date("(%m/%d/%y %X) ["..name.."]: "..msg.."\n"))
 	else
