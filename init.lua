@@ -1,3 +1,5 @@
+-- License: CC0
+
 local chatlog = minetest.get_worldpath().."/chatlog.txt"
 monthfirst = true -- Wheter the 1st of Feb should be 1/2/13(monthfirst = false) or 2/1/13(monthfirst = true)
 
