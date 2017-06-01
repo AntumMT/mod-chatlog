@@ -1,0 +1,2 @@
+# Whether month is displayed before day in timestamp (E.g. 'dd/mm/yyyy' vs. 'mm/dd/yyyy').
+chatlog.monthfirst (Timestamp shows month before day) bool true
