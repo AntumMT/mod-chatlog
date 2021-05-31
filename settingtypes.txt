@@ -1,2 +1,5 @@
-# Whether month is displayed before day in timestamp (E.g. 'dd/mm/yyyy' vs. 'mm/dd/yyyy').
-chatlog.monthfirst (Timestamp shows month before day) bool true
+
+# Timestamp format (see: https://www.lua.org/pil/22.1.html).
+#
+# Default: %m/%d/%y %X (mm/dd/yyyy hh:mm:ss AM/PM)
+chatlog.format (Timestamp format) string %m/%d/%y %X
