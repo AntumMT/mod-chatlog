@@ -1,23 +1,40 @@
-## Chat Log (*chatlog*) mod for [Minetest][]
-
+## Chat Log for Minetest
 
 ---
 ### Description:
 
-Forked from [JBR's chatlog mod][forum.jbr]. This mod creates a *chatlog.txt* file in the world directory with a record of player conversations.
+A [Minetest][] mod that logs player conversations to the world directory.
+
+Originally forked from [JBR's chatlog mod](https://forum.minetest.net/viewtopic.php?t=6220).
+
+---
+### Usage:
 
 Available configuration settings:
-- ***chatlog.monthfirst***
-  - If ***true***, puts month first in timestamp.
 
+- `chatlog.format`
+	- String representing timestamp format (see: https://www.lua.org/pil/22.1.html).
+	- default: `%m/%d/%y %X`
+- `chatlog.single_file`
+	- Output to a single file (chatlog.txt) instead of separating by date (chatlog/YYYY_MM_DD.txt).
+	- default: `false`
+- `chatlog.disable`
+	- Disables logging.
+	- default: `false`
 
 ---
 ### Licensing:
 
 [MIT](LICENSE.txt)
 
+---
+### Links:
+
+- [![ContentDB](https://content.minetest.net/packages/AntumDeluge/chatlog/shields/title/)](https://content.minetest.net/packages/AntumDeluge/chatlog/)
+- [Forum](https://forum.minetest.net/viewtopic.php?t=18287)
+- [Git repo](https://github.com/AntumMT/mod-chatlog)
+- [Changelog](changelog.txt)
+- [TODO](TODO.txt)
+
 
 [Minetest]: http://www.minetest.net/
-
-[forum]: https://forum.minetest.net/viewtopic.php?t=18287
-[forum.jbr]: https://forum.minetest.net/viewtopic.php?t=6220
