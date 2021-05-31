@@ -45,4 +45,6 @@ local function playerspeak(name, msg)
 	end
 end
 
-minetest.register_on_chat_message(playerspeak)
+if not core.settings:get_bool("chatlog.disable", false) then
+	core.register_on_chat_message(playerspeak)
+end

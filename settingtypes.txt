@@ -7,3 +7,6 @@ chatlog.format (Timestamp format) string %m/%d/%y %X
 # Chatlog is output to single file (chatlog.txt) instead
 # of split into files by date (chatlog/YYYY_MM_DD.txt).
 chatlog.single_file (Single file chatlog) bool false
+
+# Disables exporting chat.
+chatlog.disable (Disable chatlog) bool false
