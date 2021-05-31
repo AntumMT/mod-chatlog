@@ -2,7 +2,7 @@
 
 
 ---
-### **Description:**
+### Description:
 
 Forked from [JBR's chatlog mod][forum.jbr]. This mod creates a *chatlog.txt* file in the world directory with a record of player conversations.
 
@@ -12,14 +12,12 @@ Available configuration settings:
 
 
 ---
-### **Licensing:**
+### Licensing:
 
-[CC0][lic.cc0]
+[MIT](LICENSE.txt)
 
 
 [Minetest]: http://www.minetest.net/
 
 [forum]: https://forum.minetest.net/viewtopic.php?t=18287
 [forum.jbr]: https://forum.minetest.net/viewtopic.php?t=6220
-
-[lic.cc0]: LICENSE.txt

@@ -1,4 +1,4 @@
--- License: CC0
+-- License: MIT
 
 local chatlog = minetest.get_worldpath().."/chatlog.txt"
 monthfirst = minetest.settings:get_bool('chatlog.monthfirst') or true -- Whether month is displayed before day in timestamp
