@@ -14,7 +14,7 @@ Available configuration settings:
 
 - `chatlog.format`
 	- String representing timestamp format (see: https://www.lua.org/pil/22.1.html).
-	- default: `%m/%d/%y %X`
+	- default: `%m/%d/%Y %H:%M:%S`
 - `chatlog.single_file`
 	- Output to a single file (chatlog.txt) instead of separating by date (chatlog/YYYY_MM_DD.txt).
 	- default: `false`

@@ -18,7 +18,7 @@ function chatlog.log(lvl, msg)
 end
 
 
-chatlog.format = core.settings:get("chatlog.format") or "%m/%d/%y %X"
+chatlog.format = core.settings:get("chatlog.format") or "%m/%d/%Y %H:%M:%S"
 chatlog.single_file = core.settings:get_bool("chatlog.single_file", false)
 
 chatlog.out = minetest.get_worldpath() .. "/chatlog"
