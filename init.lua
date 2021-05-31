@@ -28,24 +28,20 @@ end
 
 
 local function playerspeak(name, msg)
-	local f
-	if chatlog.single_file then
-		f = io.open(chatlog.out, "a")
-	else
+	local out_file = chatlog.out
+	if not chatlog.single_file then
 		-- make sure directory exists
 		if not core.mkdir(chatlog.out) then
 			chatlog.log("error", "could not create directory for writing: " .. chatlog.out)
 			return
 		end
 
-		f = io.open(chatlog.out .. "/" .. os.date("%Y_%m_%d") .. ".txt", "a")
+		out_file = chatlog.out .. "/" .. os.date("%Y_%m_%d") .. ".txt"
 	end
 
-	if f then
-		f:write(os.date("(" .. chatlog.format .. ") [" .. name .. "]: " .. msg .. "\n"))
-		f:close()
-	else
-		chatlog.log("error", "could not open chatlog file for writing: " .. chatlog.out)
+	if not core.safe_file_write(out_file,
+			os.date("(" .. chatlog.format .. ") [" .. name .. "]: " .. msg .. "\n")) then
+		chatlog.log("error", "could not open chatlog file for writing: " .. out_file)
 	end
 end
 
