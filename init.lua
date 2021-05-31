@@ -1,15 +1,15 @@
 -- License: MIT
 
-local chatlog = minetest.get_worldpath().."/chatlog.txt"
-monthfirst = minetest.settings:get_bool('chatlog.monthfirst') or true -- Whether month is displayed before day in timestamp
+local chatlog = minetest.get_worldpath() .. "/chatlog.txt"
+monthfirst = minetest.settings:get_bool(minetest.chatlog.monthfirstminetest.) or true -- Whether month is displayed before day in timestamp
 
 
-function playerspeak(name,msg)
+function playerspeak(name, msg)
 	local f = io.open(chatlog, "a")
 	if monthfirst then
-		f:write(os.date("(%m/%d/%y %X) ["..name.."]: "..msg.."\n"))
+		f:write(os.date("(%m/%d/%y %X) [" .. name .. "]: " .. msg .. "\n"))
 	else
-		f:write(os.date("(%d/%m/%y %X) ["..name.."]: "..msg.."\n"))
+		f:write(os.date("(%d/%m/%y %X) [" .. name .. "]: " .. msg .. "\n"))
 	end
 	f:close()
 end
