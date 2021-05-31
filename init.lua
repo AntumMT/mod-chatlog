@@ -27,7 +27,7 @@ if chatlog.single_file then
 end
 
 
-local function playerspeak(name, msg)
+local function write_log(name, msg)
 	local out_file = chatlog.out
 	if not chatlog.single_file then
 		-- make sure directory exists
@@ -46,5 +46,5 @@ local function playerspeak(name, msg)
 end
 
 if not core.settings:get_bool("chatlog.disable", false) then
-	core.register_on_chat_message(playerspeak)
+	core.register_on_chat_message(write_log)
 end
