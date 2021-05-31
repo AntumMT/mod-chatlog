@@ -39,8 +39,11 @@ local function write_log(name, msg)
 		out_file = chatlog.out .. "/" .. os.date("%Y_%m_%d") .. ".txt"
 	end
 
-	if not core.safe_file_write(out_file,
-			os.date("(" .. chatlog.format .. ") [" .. name .. "]: " .. msg .. "\n")) then
+	local f = io.open(out_file, "a")
+	if f then
+		f:write("(" .. os.date(chatlog.format) .. ") [" .. name .. "]: " .. msg .. "\n")
+		f:close()
+	else
 		chatlog.log("error", "could not open chatlog file for writing: " .. out_file)
 	end
 end
