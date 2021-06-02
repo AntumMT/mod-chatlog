@@ -7,6 +7,8 @@ A [Minetest][] mod that logs player conversations to the world directory.
 
 Originally forked from [JBR's chatlog mod](https://forum.minetest.net/viewtopic.php?t=6220).
 
+![icon](icon.png)
+
 ---
 ### Usage:
 
@@ -25,7 +27,8 @@ Available configuration settings:
 ---
 ### Licensing:
 
-[MIT](LICENSE.txt)
+- Code: [MIT](LICENSE.txt)
+- Icon: by [ericlemerdy](https://openclipart.org/detail/14475) (CC0)
 
 ---
 ### Links:
