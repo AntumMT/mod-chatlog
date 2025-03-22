@@ -1,11 +1,11 @@
-## Chat Log for Minetest
+## Chat Log for Luanti
 
 ---
 ### Description:
 
-A [Minetest][] mod that logs player conversations to the world directory.
+A [Luanti (Minetest)](https://luanti.org/) mod that logs player conversations to the world directory.
 
-Originally forked from [JBR's chatlog mod](https://forum.minetest.net/viewtopic.php?t=6220).
+Originally forked from [JBR's chatlog mod](https://forum.luanti.org/viewtopic.php?t=6220).
 
 ![icon](icon.png)
 
@@ -33,11 +33,8 @@ Available configuration settings:
 ---
 ### Links:
 
-- [![ContentDB](https://content.minetest.net/packages/AntumDeluge/chatlog/shields/title/)](https://content.minetest.net/packages/AntumDeluge/chatlog/)
-- [Forum](https://forum.minetest.net/viewtopic.php?t=18287)
-- [Git repo](https://github.com/AntumMT/mod-chatlog)
+- [![ContentDB](https://content.luanti.org/packages/AntumDeluge/chatlog/shields/title/)](https://content.luanti.org/packages/AntumDeluge/chatlog/)
+- [Forum](https://forum.luanti.org/viewtopic.php?t=18287)
+- [Git](https://codeberg.org/AntumLuanti/mod-chatlog) ([mirror](https://github.com/AntumMT/mod-chatlog))
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
-
-
-[Minetest]: http://www.minetest.net/
