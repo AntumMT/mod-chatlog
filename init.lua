@@ -21,7 +21,7 @@ end
 chatlog.format = core.settings:get("chatlog.format") or "%m/%d/%Y %H:%M:%S"
 chatlog.single_file = core.settings:get_bool("chatlog.single_file", false)
 
-chatlog.out = minetest.get_worldpath() .. "/chatlog"
+chatlog.out = core.get_worldpath() .. "/chatlog"
 if chatlog.single_file then
 	chatlog.out = chatlog.out .. ".txt"
 end
